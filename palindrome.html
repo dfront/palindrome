@@ -1,0 +1,19 @@
+<html>
+<head>
+<script type="text/javascript">
+function palindrome(){
+   var string = document.getElementById('input_word').value;
+   var str = string.toLowerCase().match(/\w/g).join(""),
+   reverse = str.split('').reverse().join('');
+   if(str === reverse)
+        alert("Is palindrome");
+    else
+	alert("Is not palindrome");
+} 
+</script>
+</head>
+<body>
+<input type="text" id="input_word">
+<input type="button" value="check" onclick="palindrome()" />
+</body>
+<html>
